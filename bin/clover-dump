@@ -4,11 +4,15 @@
 use Clover\Dump\CloverDumpApplication;
 use Clover\Dump\Command\Dump;
 
-require __DIR__ . '/../vendor/autoload.php';
+if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    require __DIR__ . '/../vendor/autoload.php';
+} elseif (file_exists(__DIR__ . '/../autoload.php')) {
+    require __DIR__ . '/../autoload.php';
+}
 
 $application = new CloverDumpApplication();
 $application->setName('clover-dump');
-$application->setVersion('1.0.0');
+$application->setVersion('1.0.1');
 
 $application->addCommands([new Dump()]);
 $application->run();
