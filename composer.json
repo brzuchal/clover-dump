@@ -1,0 +1,19 @@
+{
+    "name": "clover/dump",
+    "description": "",
+    "type": "library",
+    "keywords": [],
+    "homepage": "https://github.com/mrkrstphr/clover-dump",
+    "autoload": {
+        "psr-0": {
+            "Clover\\Dump": ["src/"]
+        }
+    },
+    "require": {
+        "php": ">=5.3",
+        "symfony/console": "2.2.*"
+    },
+    "bin": [
+        "bin/clover-dump"
+    ]
+}

@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Clover\Dump\CloverDumpApplication;
+use Clover\Dump\Command\Dump;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$application = new CloverDumpApplication();
+$application->setName('clover-dump');
+$application->setVersion('1.0.0');
+
+$application->addCommands([new Dump()]);
+$application->run();
