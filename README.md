@@ -6,11 +6,11 @@ Clover Dump is a simple application that parses through a clover.xml file and sp
 
 Include `clover-dump` in your project by adding it to your `composer.json` file:
 
-{
-    "require": {
-        "clover/dump": "1.*"
+    {
+        "require": {
+            "clover/dump": "1.*"
+        }
     }
-}
 
 ## Usage
 
@@ -38,7 +38,6 @@ If you only want summary information (instead of every file), add the `--summary
 
 You can change which percentages toggle the warning and error colors on the console: 
 
-    
     $ bin/clover-dump --warning-percentage=70 --error-percentage=50 clover.xml 
 
 You can also make the application return an error return value at a certain percantage (which could be used by a CI server to mark a build as failed): 
