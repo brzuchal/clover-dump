@@ -10,8 +10,8 @@
         }
     },
     "require": {
-        "php": ">=5.3",
-        "symfony/console": "2.2.*"
+        "php": ">=5.3.3",
+        "symfony/console": "~2.3"
     },
     "bin": [
         "bin/clover-dump"
